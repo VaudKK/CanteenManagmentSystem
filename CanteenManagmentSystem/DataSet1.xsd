@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet1" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="CanteenDBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CanteenDBConnectionString (Settings)" PropertyReference="ApplicationSettings.CanteenManagmentSystem.Properties.Settings.GlobalReference.Default.CanteenDBConnectionString" Provider="System.Data.Odbc" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="PettyCashViewTableAdapter" GeneratorDataComponentClassName="PettyCashViewTableAdapter" Name="PettyCashView" UserDataComponentName="PettyCashViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CanteenDBConnectionString (Settings)" DbObjectName="PettyCashView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "Date", "TotalPettyCash" FROM "PettyCashView"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="TotalPettyCash" DataSetColumn="TotalPettyCash" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalesReportViewTableAdapter" GeneratorDataComponentClassName="SalesReportViewTableAdapter" Name="SalesReportView" UserDataComponentName="SalesReportViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CanteenDBConnectionString (Settings)" DbObjectName="SalesReportView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "Date", "TotalSales", "TotalExpenditure", "TotalPettyCash" FROM "SalesReportView"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Date" DataSetColumn="Date" />
+              <Mapping SourceColumn="TotalSales" DataSetColumn="TotalSales" />
+              <Mapping SourceColumn="TotalExpenditure" DataSetColumn="TotalExpenditure" />
+              <Mapping SourceColumn="TotalPettyCash" DataSetColumn="TotalPettyCash" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SalesViewTableAdapter" GeneratorDataComponentClassName="SalesViewTableAdapter" Name="SalesView" UserDataComponentName="SalesViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CanteenDBConnectionString (Settings)" DbObjectName="SalesView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "SalesDate", "TotalSales" FROM "SalesView"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SalesDate" DataSetColumn="SalesDate" />
+              <Mapping SourceColumn="TotalSales" DataSetColumn="TotalSales" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="SupplyViewTableAdapter" GeneratorDataComponentClassName="SupplyViewTableAdapter" Name="SupplyView" UserDataComponentName="SupplyViewTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="CanteenDBConnectionString (Settings)" DbObjectName="SupplyView" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT "SupplyDate", "TotalExpenditure" FROM "SupplyView"</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="SupplyDate" DataSetColumn="SupplyDate" />
+              <Mapping SourceColumn="TotalExpenditure" DataSetColumn="TotalExpenditure" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="DataSet1" msprop:Generator_UserDSName="DataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PettyCashView" msprop:Generator_TableClassName="PettyCashViewDataTable" msprop:Generator_TableVarName="tablePettyCashView" msprop:Generator_TablePropName="PettyCashView" msprop:Generator_RowDeletingName="PettyCashViewRowDeleting" msprop:Generator_RowChangingName="PettyCashViewRowChanging" msprop:Generator_RowEvHandlerName="PettyCashViewRowChangeEventHandler" msprop:Generator_RowDeletedName="PettyCashViewRowDeleted" msprop:Generator_UserTableName="PettyCashView" msprop:Generator_RowChangedName="PettyCashViewRowChanged" msprop:Generator_RowEvArgName="PettyCashViewRowChangeEvent" msprop:Generator_RowClassName="PettyCashViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalPettyCash" msprop:Generator_ColumnVarNameInTable="columnTotalPettyCash" msprop:Generator_ColumnPropNameInRow="TotalPettyCash" msprop:Generator_ColumnPropNameInTable="TotalPettyCashColumn" msprop:Generator_UserColumnName="TotalPettyCash" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesReportView" msprop:Generator_TableClassName="SalesReportViewDataTable" msprop:Generator_TableVarName="tableSalesReportView" msprop:Generator_TablePropName="SalesReportView" msprop:Generator_RowDeletingName="SalesReportViewRowDeleting" msprop:Generator_RowChangingName="SalesReportViewRowChanging" msprop:Generator_RowEvHandlerName="SalesReportViewRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesReportViewRowDeleted" msprop:Generator_UserTableName="SalesReportView" msprop:Generator_RowChangedName="SalesReportViewRowChanged" msprop:Generator_RowEvArgName="SalesReportViewRowChangeEvent" msprop:Generator_RowClassName="SalesReportViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Date" msprop:Generator_ColumnVarNameInTable="columnDate" msprop:Generator_ColumnPropNameInRow="Date" msprop:Generator_ColumnPropNameInTable="DateColumn" msprop:Generator_UserColumnName="Date" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalSales" msprop:Generator_ColumnVarNameInTable="columnTotalSales" msprop:Generator_ColumnPropNameInRow="TotalSales" msprop:Generator_ColumnPropNameInTable="TotalSalesColumn" msprop:Generator_UserColumnName="TotalSales" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalExpenditure" msprop:Generator_ColumnVarNameInTable="columnTotalExpenditure" msprop:Generator_ColumnPropNameInRow="TotalExpenditure" msprop:Generator_ColumnPropNameInTable="TotalExpenditureColumn" msprop:Generator_UserColumnName="TotalExpenditure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalPettyCash" msprop:Generator_ColumnVarNameInTable="columnTotalPettyCash" msprop:Generator_ColumnPropNameInRow="TotalPettyCash" msprop:Generator_ColumnPropNameInTable="TotalPettyCashColumn" msprop:Generator_UserColumnName="TotalPettyCash" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SalesView" msprop:Generator_TableClassName="SalesViewDataTable" msprop:Generator_TableVarName="tableSalesView" msprop:Generator_TablePropName="SalesView" msprop:Generator_RowDeletingName="SalesViewRowDeleting" msprop:Generator_RowChangingName="SalesViewRowChanging" msprop:Generator_RowEvHandlerName="SalesViewRowChangeEventHandler" msprop:Generator_RowDeletedName="SalesViewRowDeleted" msprop:Generator_UserTableName="SalesView" msprop:Generator_RowChangedName="SalesViewRowChanged" msprop:Generator_RowEvArgName="SalesViewRowChangeEvent" msprop:Generator_RowClassName="SalesViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SalesDate" msprop:Generator_ColumnVarNameInTable="columnSalesDate" msprop:Generator_ColumnPropNameInRow="SalesDate" msprop:Generator_ColumnPropNameInTable="SalesDateColumn" msprop:Generator_UserColumnName="SalesDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalSales" msprop:Generator_ColumnVarNameInTable="columnTotalSales" msprop:Generator_ColumnPropNameInRow="TotalSales" msprop:Generator_ColumnPropNameInTable="TotalSalesColumn" msprop:Generator_UserColumnName="TotalSales" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="SupplyView" msprop:Generator_TableClassName="SupplyViewDataTable" msprop:Generator_TableVarName="tableSupplyView" msprop:Generator_TablePropName="SupplyView" msprop:Generator_RowDeletingName="SupplyViewRowDeleting" msprop:Generator_RowChangingName="SupplyViewRowChanging" msprop:Generator_RowEvHandlerName="SupplyViewRowChangeEventHandler" msprop:Generator_RowDeletedName="SupplyViewRowDeleted" msprop:Generator_UserTableName="SupplyView" msprop:Generator_RowChangedName="SupplyViewRowChanged" msprop:Generator_RowEvArgName="SupplyViewRowChangeEvent" msprop:Generator_RowClassName="SupplyViewRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SupplyDate" msprop:Generator_ColumnVarNameInTable="columnSupplyDate" msprop:Generator_ColumnPropNameInRow="SupplyDate" msprop:Generator_ColumnPropNameInTable="SupplyDateColumn" msprop:Generator_UserColumnName="SupplyDate" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TotalExpenditure" msprop:Generator_ColumnVarNameInTable="columnTotalExpenditure" msprop:Generator_ColumnPropNameInRow="TotalExpenditure" msprop:Generator_ColumnPropNameInTable="TotalExpenditureColumn" msprop:Generator_UserColumnName="TotalExpenditure" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
